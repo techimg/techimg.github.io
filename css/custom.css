@@ -1,0 +1,88 @@
+/* CSS Balancer */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;font-size:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:bold}img{color:transparent;font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic}ol,ul{list-style:none}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:normal;vertical-align:top;text-align:left}q{quotes:none}q:before,q:after{content:'';content:none}sub,sup,small{font-size:75%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}svg{overflow:hidden}html,button,input,select,textarea{font-family:sans-serif;}:hover,:active,:focus,input{outline:0}button{cursor:pointer}
+::-webkit-selection{background:#3c5485;color:#fff}::-moz-selection{background:#3c5485;color:#fff}::selection{background:#3c5485;color:#fff}
+
+* {
+	font-family: Ubuntu;
+}
+
+body, html {
+	height: 100%;
+}
+
+.container {
+	padding: 0 10%;
+}
+
+main {
+	display: block;
+}
+
+.row {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 2% 0;
+}
+
+.row .col3:first-child {
+	margin: 0;
+}
+
+.col3 {
+	display: block;
+	float: left;
+	width: 32%;
+	margin: 0 0 0 2%;
+}
+
+/* Logo */
+header h1 a img{
+	display:block;
+	width: 217px;
+	height: 73px;
+	margin: 60px 0;
+}
+
+.login-panel {
+	float: right;
+}
+
+h3 {
+	color: #5caa00;
+	margin: 20px 0 0;
+}
+
+ul li a, .login-panel a {
+	color: #3c5485;
+	font-size: 13px;
+	-webkit-transition: color 0.1s; 
+	-moz-transition: color 0.1s; 
+	-o-transition: color 0.1s; 
+	transition: color 0.1s;  
+}
+
+ul li a:hover, .login-panel a:hover {
+	color: #5caa00;
+	font-size: 13px;
+}
+
+/* Main */
+.main p {
+	text-align: justify;
+	line-height: 26px;
+}
+
+
+/* Footer */
+footer {
+	color: #999;
+	font-size: 13px;
+	display: block;
+	clear: both;
+	border-top: 1px solid #999;
+	margin: 50px 0;
+	padding: 20px 0;
+	position: relative;
+	bottom: 0;
+}
